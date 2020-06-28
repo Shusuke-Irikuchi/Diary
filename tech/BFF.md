@@ -26,7 +26,7 @@ BFFは主なユースケースを代表的なユースケースをgosyoukai
 /api/news?platform=game  //ゲーム機器
 /api/news?platform=tv //テレビ 
 ```
-![IMG_229E0A50B7AB-1](https://user-images.githubusercontent.com/56505469/85938011-26e9e980-b944-11ea-9a44-b9d50c0d9254.jpeg)
+![1](https://user-images.githubusercontent.com/56505469/85938182-c6f44280-b945-11ea-9075-37909eb6dd62.jpeg)
 これだとAPI側で考慮しきれなくなる場合もあり,コードが重複する可能性もあります.それなら,プラットフォームと対になるようにAPIを用意すればいいじゃないかと思うかもしれませんが,
 これだと後から機能追加だったり,同様にコードがプラットフォーム間で重複する可能性があります.そこでどのようにするかというと,下記のようにします.
 ![IMG_1F73B92B5B8E-1](https://user-images.githubusercontent.com/56505469/85938084-bf806980-b944-11ea-8095-f20c5c3dd814.jpeg)
