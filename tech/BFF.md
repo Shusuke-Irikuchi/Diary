@@ -69,7 +69,7 @@ SSRの場合はクローラー🏊‍♂️が正しく評価してくれるの�
 そこで登場BFF.こいつがBFFで受けっとったチャンクをS3などのストレージ送って1つのファイルに戻してから、バックエンドのAPIをファイルパスをパラメタにしてリクエストする.
 
 #### セッション管理
-
+いい説明があったのでこちらをどうぞ(セッション管理)[https://www.atmarkit.co.jp/ait/articles/1805/18/news022.html]
 
 ### 添書き
 - GraphQLの登場を当人が記憶していたのは次の記事を読んだ覚えがあったらしい.....[フロントエンドに型の秩序を与えるGraphQLとTypeScript](https://www.wantedly.com/companies/wantedly/post_articles/183567)
