@@ -26,10 +26,10 @@ BFFは主なユースケースを代表的なユースケースをgosyoukai
 /api/news?platform=game  //ゲーム機器
 /api/news?platform=tv //テレビ 
 ```
-![1](https://user-images.githubusercontent.com/56505469/85938182-c6f44280-b945-11ea-9075-37909eb6dd62.jpeg)  
+![IMG_229E0A50B7AB-1](https://user-images.githubusercontent.com/56505469/85938219-366a3200-b946-11ea-8fc5-bb0f66779fc8.jpg)  
 これだとAPI側で各プラットフォームを考慮しきれなくなる場合もあり,コードが重複する可能性もあります.それなら,プラットフォームと対になるようにAPIを用意すればいいじゃないかと思うかもしれませんが,
 これだと後から機能追加だったり,同様にコードがプラットフォーム間で重複する可能性があります.そこでどのようにするかというと,下記のようにします.
-![IMG_1F73B92B5B8E-1](https://user-images.githubusercontent.com/56505469/85938084-bf806980-b944-11ea-8095-f20c5c3dd814.jpeg)
+![1](https://user-images.githubusercontent.com/56505469/85938230-53066a00-b946-11ea-9c25-4108a03fa66e.jpg)
 BFFが各プラットフォームにあったレスポンスを返すようにすることでAPI側の開発効率をあげるだけでなく,プラットホームを増やせるようになりました.
 しかしこれだとBFFへの負荷が大きくなってしまうので,各プラットフォームにBFFを用意することでBFFへの負荷を分散させます.ここで注意しなくては行けないのが, ** BFFにAPI側の仕事を任せすぎなことです. **
 
