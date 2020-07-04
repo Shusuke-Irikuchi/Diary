@@ -18,18 +18,41 @@ IOSの場合だと全てのブラウザで使う,レンダリングエンジン�
 
 <img width="629" alt="スクリーンショット 2020-06-28 18 17 48" src="https://user-images.githubusercontent.com/56505469/85943562-c66ea280-b96b-11ea-981d-7ca99962ae71.png">
 
+## construct the DOM tree
+
 ダウンロードしたリソースをパースします.ここでは主に(字句解析,構文解析が行われます)
 - HTMLファイル
 - CSSファイル
 - JavaScriptファイル
 - jpeg、png、gif、svg, など
 
-HTMLファイル → DOMツリー
-CSSファイル → CSSOMツリー
+HTMLファイル → DOMツリー  
+CSSファイル → CSSOMツリー  
+この時にDOMツリー内で宣言されているリソースをさらに取得し読み込み進めていきます.(2回目以降はキャッシュなど)
 
-## Javascriptエンジンについて
+## Scripting
+JsのコードをJavaScriptエンジンに引き渡して実行させます. 
+### Javascriptエンジンについて
  名前のとおりこいつがいるおかげでブラウザでJSを実行することができます.これも下記ブラウザでいろいろあります。
 - google: V8
 - Sfari: Nitro
 - Firefox: SpiderMonkey(かっこいい)
 - Microsoft Chakra
+次の工程のように実装を行っていきます
+- 字句解析
+- 構文分析
+- 抽象構文木の作成
+- コンパイル(実行可能コードの生成)
+- 実行
+
+字句解析と構文解析の説明は先と同様ようです.
+```
+if ( a > 0 ) {
+x = a;
+}
+else {
+x = -a;
+}
+```
+
+<img width="670" alt="スクリーンショット 2020-07-04 23 20 10" src="https://user-images.githubusercontent.com/56505469/86514428-fb3b9780-be4c-11ea-85a1-5e7b84a55653.png">
