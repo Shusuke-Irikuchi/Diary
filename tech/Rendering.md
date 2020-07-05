@@ -57,8 +57,9 @@ else {
 
 <img width="670" alt="スクリーンショット 2020-07-04 23 20 10" src="https://user-images.githubusercontent.com/56505469/86514428-fb3b9780-be4c-11ea-85a1-5e7b84a55653.png">  
 上記のような構文木ができた後に,JavaScriptエンジン内部のコンパイラによって実行可能な形式にコンパイルされます.
+
 ## layout of the render tree
-Jsの実行が終了すると今度はレイアウトツリーの構築,スタイルの計算が行われます.
-DOM要素に対してどのようなCSSルールを適用するのか総当たりで見ていきます.
-else {み
-else {
+Jsの実行が終了すると今度はレイアウトツリーの構築が行われます.
+DOMツリーとCSSOMツリーを元にレイアウトツリーを作成していきます.
+<img width="890" alt="スクリーンショット 2020-07-05 12 47 09" src="https://user-images.githubusercontent.com/56505469/86525104-bdc32280-bebd-11ea-865c-272e1ddf8cf7.png">
+
