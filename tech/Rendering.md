@@ -61,3 +61,4 @@ else {
 Jsの実行が終了するとスタイルの計算を行い,レイアウトツリーの構築が行われます.
 <img width="890" alt="スクリーンショット 2020-07-05 12 47 09" src="https://user-images.githubusercontent.com/56505469/86525104-bdc32280-bebd-11ea-865c-272e1ddf8cf7.png">
 
+## Painting the render tree
