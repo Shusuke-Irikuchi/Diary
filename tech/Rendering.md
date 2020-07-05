@@ -11,8 +11,6 @@
 - Microsoft Edge: EdgeHTML
 
 
-IOSの場合だと全てのブラウザで使う,レンダリングエンジンが指定されており,Webkitを使用しています.
-
 ### フローについて
 簡単なフローについて素晴らしい物があったのでそちらを載せておきます。
 
@@ -57,9 +55,9 @@ else {
 
 <img width="670" alt="スクリーンショット 2020-07-04 23 20 10" src="https://user-images.githubusercontent.com/56505469/86514428-fb3b9780-be4c-11ea-85a1-5e7b84a55653.png">  
 上記のような構文木ができた後に,JavaScriptエンジン内部のコンパイラによって実行可能な形式にコンパイルされます.
+コンパイル終了後に初めて実行されてこのときDOMの変更等があった場合はDOMツリーにその変更が反映されます.
 
 ## layout of the render tree
-Jsの実行が終了すると今度はレイアウトツリーの構築が行われます.
-DOMツリーとCSSOMツリーを元にレイアウトツリーを作成していきます.
+Jsの実行が終了するとスタイルの計算を行い,レイアウトツリーの構築が行われます.
 <img width="890" alt="スクリーンショット 2020-07-05 12 47 09" src="https://user-images.githubusercontent.com/56505469/86525104-bdc32280-bebd-11ea-865c-272e1ddf8cf7.png">
 
